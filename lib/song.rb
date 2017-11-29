@@ -1,6 +1,6 @@
 class Song
   extend Concerns::Findable
-  
+
   attr_accessor :name
   attr_reader :artist, :genre
 
@@ -43,4 +43,5 @@ class Song
   def self.find_by_name(name)
     all.detect { |s| s.name == name }
   end
+  
 end
