@@ -29,6 +29,5 @@ class Genre
 
   def artist
     songs.collect { |s| s.artist }.uniq
-    end
   end
 end
