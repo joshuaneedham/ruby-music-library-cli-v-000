@@ -1,11 +1,7 @@
 class MusicImporter
+  attr_accessor :path
 
-  path = './spec/fixtures/mp2s'
   def initialize(path)
     @path = path
-  end
-
-  def to_path
-    @path
   end
 end
