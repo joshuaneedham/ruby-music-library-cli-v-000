@@ -1,4 +1,6 @@
 class Genre
+  extend Findable::ClassMethods
+
   attr_accessor :name
   attr_reader :songs
 
