@@ -26,4 +26,10 @@ class Genre
     genre.save
     genre
   end
+
+  def artist
+    songs.collect do |s|
+      s.artist.uniq
+    end
+  end
 end
