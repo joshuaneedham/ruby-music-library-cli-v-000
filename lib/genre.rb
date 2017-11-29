@@ -1,6 +1,6 @@
 class Genre
   attr_accessor :name
-  attr_reader :songs, :artists
+  attr_reader :songs
 
   @@all = []
 
@@ -28,6 +28,6 @@ class Genre
   end
 
   def artist
-    artists.collect { |s| s.artist }.uniq
+    songs.collect { |s| s.artist }.uniq
   end
 end
