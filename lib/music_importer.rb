@@ -8,5 +8,3 @@ class MusicImporter
     @path
   end
 end
-
-  
